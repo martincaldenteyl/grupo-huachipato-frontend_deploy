@@ -53,10 +53,12 @@ function VentanaJuego() {
               <div className="jugador-actual">
                 <div className="cuadrado-negro">
                   <p>Jugador Actual: {username}</p>
-
+                  {player && (
+                    <>
                       <p>Cuenta corriente: ${player.balance}</p>
                       <p>Posición: {player.position}</p>
-
+                    </>
+                  )}
                   <button>Ver mis propiedades</button>
                 </div>
               </div>
