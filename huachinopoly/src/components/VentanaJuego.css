@@ -16,7 +16,7 @@
   }
   
   body {
-    background-image: url('.../public/img/img/fondo.jpg');
+    background-image: url('../../public/imgs/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -28,7 +28,7 @@
   }
   
   .board1 {
-    background-image: url('.../public/img/img/board.png');
+    background-image: url('../../public/imgs/board.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

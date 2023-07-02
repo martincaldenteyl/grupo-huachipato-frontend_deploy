@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Auto from '.../public/img/img/auto.png';
+import Auto from '../../public/imgs/auto.png';
 
 class Car extends Component {
   state = {

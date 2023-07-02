@@ -1,5 +1,5 @@
 .boton {
-    background-image: url('.../public/img/img/dices.png');
+    background-image: url('../../public/imgs/dices.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 10px;

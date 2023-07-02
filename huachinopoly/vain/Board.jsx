@@ -1,5 +1,5 @@
-import board_img from '.../public/img/img/board.png';
-import Auto from '.../public/img/img/auto.png';
+import board_img from '../../public/imgs/board.png';
+import Auto from '../../public/imgs/auto.png';
 import './Board.css'
 
 export default function Board({style}) {

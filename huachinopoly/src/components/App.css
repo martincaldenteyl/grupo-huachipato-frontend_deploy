@@ -19,7 +19,7 @@
 
 
 body {
-  background-image: url('.../public/img/img/fondo.jpg');
+  background-image: url('../../public/imgs/fondo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
