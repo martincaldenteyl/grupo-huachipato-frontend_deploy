@@ -36,10 +36,17 @@ function Principal() {
       });
   };
 
+  const handleLogout = () => {
+    navigate('/Logout');
+  };
+
   return (
     <>
       <div className="App">
         <Navbar />
+        <div className="logout-container">
+          <button onClick={handleLogout}>Log Out</button>
+        </div>
         <div className="carta-container">
           <div className="carta">
             <img src={coheteImg} alt="Cohete" className="carta-image" />
@@ -75,3 +82,4 @@ function Principal() {
 }
 
 export default Principal;
+

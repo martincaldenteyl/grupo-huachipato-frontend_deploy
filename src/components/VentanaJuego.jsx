@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './VentanaJuego.css';
 
 function VentanaJuego() {
+  const navigate = useNavigate();
   const username = localStorage.getItem('username');
   const gameId = localStorage.getItem('gameId');
   const userId = localStorage.getItem('userId');
@@ -35,6 +37,10 @@ function VentanaJuego() {
       });
   };
 
+  const handleGoBack = () => {
+    navigate('/Principal');
+  };
+
   return (
     <>
       <div className="App">
@@ -59,7 +65,7 @@ function VentanaJuego() {
             </div>
             <div className="botones">
               {game && !game.started && <button onClick={handleStart}>Start</button>}
-              <button>Volver</button>
+              <button onClick={handleGoBack}>Volver</button>
             </div>
           </div>
         </div>
@@ -72,5 +78,6 @@ function VentanaJuego() {
 }
 
 export default VentanaJuego;
+
 
 
