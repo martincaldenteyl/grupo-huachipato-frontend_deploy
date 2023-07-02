@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './Principal.css';
-import coheteImg from '../../public/img/cohete.png';
-import barcoImg from '../../public/img/barco.png';
-import avionImg from '../../public/img/avion.png';
+import coheteImg from '../assets/img/cohete.png';
+import barcoImg from '../assets/img/barco.png';
+import avionImg from '../assets/img/avion.png';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 

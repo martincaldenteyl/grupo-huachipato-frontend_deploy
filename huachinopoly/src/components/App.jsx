@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-import Logo from '../../public/imgs/logo.png';
+import Logo from '../assets/img/logo.png';
 import './App.css';
 
 function App() {

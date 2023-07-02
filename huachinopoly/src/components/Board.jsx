@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import DiceButton from "./DiceButton";
-import Auto from '../../public/img/auto.png';
+import Auto from '../assets/img/auto.png';
 import './Board.css';
 import { useState } from 'react';
 

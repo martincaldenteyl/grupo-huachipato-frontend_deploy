@@ -1,7 +1,7 @@
-import Navbar from "../../components/Navbar"
+import Navbar from "../components/Navbar"
 // import UserCards from "./UserCards"
-import User1 from '../../public/imgs/usr1.png'
-import User2 from '../../public/imgs/usr1.png'
+import User1 from '../assets/img/usr1.png'
+import User2 from '../assets/img/usr1.png'
 import './Us.css'
 
 function UserCards() {

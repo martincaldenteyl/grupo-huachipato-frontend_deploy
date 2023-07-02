@@ -1,6 +1,6 @@
 import './UserCards.css'
-import User1 from '../../public/imgs/usr1.png'
-import User2 from '../../public/imgs/usr2.png'
+import User1 from '../assets/img/usr1.png'
+import User2 from '../assets/img/usr2.png'
 
 export default function UserCards() {
     return (
