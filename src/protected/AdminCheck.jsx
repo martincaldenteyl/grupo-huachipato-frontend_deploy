@@ -10,7 +10,7 @@ const AdminCheck = () => {
     console.log(token);
     axios({
       method: 'get',
-      url: `http://api-huachinopoly.onrender.com/scope-example/protectedadmin`,
+      url: `https://api-huachinopoly.onrender.com/scope-example/protectedadmin`,
       headers: {
         'Authorization': `Bearer ${token}`
       }

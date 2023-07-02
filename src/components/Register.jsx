@@ -23,7 +23,7 @@ function Register() {
     }
 
     axios
-      .post('http://api-huachinopoly.onrender.com/signup', { username: username, password: password, mail: mail })
+      .post('https://api-huachinopoly.onrender.com/signup', { username: username, password: password, mail: mail })
       .then(response => {
         if (response.status === 201) {
           setAlert(`Usuario ${username} se creó exitosamente`);

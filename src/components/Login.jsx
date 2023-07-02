@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    axios.post(`http://api-huachinopoly.onrender.com/login`, {
+    axios.post(`https://api-huachinopoly.onrender.com/login`, {
       mail: mail,
       password: password
     })

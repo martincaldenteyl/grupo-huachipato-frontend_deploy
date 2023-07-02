@@ -12,7 +12,7 @@ function VentanaJuego() {
 
   useEffect(() => {
     axios
-      .get('http://api-huachinopoly.onrender.com/game')
+      .get('https://api-huachinopoly.onrender.com/game')
       .then((response) => {
         const currentGame = response.data.find((g) => g.id === Number(gameId));
         setGame(currentGame);
@@ -26,7 +26,7 @@ function VentanaJuego() {
 
   const handleStart = () => {
     axios
-      .post(`http://api-huachinopoly.onrender.com/game/${gameId}/start`)
+      .post(`https://api-huachinopoly.onrender.com/game/${gameId}/start`)
       .then((response) => {
         console.log(response.data.message);
       })

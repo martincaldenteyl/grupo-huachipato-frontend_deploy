@@ -14,7 +14,7 @@ function Principal() {
   const iniciarPartida = () => {
     const userId = localStorage.getItem('userId'); // Obtener el ID del usuario actual desde localStorage
 
-    axios.post('http://api-huachinopoly.onrender.com/game')
+    axios.post('https://api-huachinopoly.onrender.com/game')
       .then((response) => {
         console.log('Partida iniciada');
         const gameId = response.data.id; // Obtener el ID del juego creado
@@ -22,7 +22,7 @@ function Principal() {
         setGameId(gameId); // Actualizar el estado con el ID del juego
 
         // Unir al usuario al juego
-        axios.post(`http://api-huachinopoly.onrender.com/game/${gameId}/join/${userId}`, { name: "Nombre del jugador" })
+        axios.post(`https://api-huachinopoly.onrender.com/game/${gameId}/join/${userId}`, { name: "Nombre del jugador" })
           .then((response) => {
             console.log('Usuario unido al juego');
             navigate('/VentanaJuego');

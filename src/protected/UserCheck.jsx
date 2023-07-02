@@ -10,7 +10,7 @@ const UserCheck = () => {
     console.log(token);
     axios({
       method: 'get',
-      url: `$http://api-huachinopoly.onrender.com/scope-example/protecteduser`,
+      url: `$https://api-huachinopoly.onrender.com/scope-example/protecteduser`,
       headers: {
         'Authorization': `Bearer ${token}`
       }

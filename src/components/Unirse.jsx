@@ -8,7 +8,7 @@ function Unirse() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://api-huachinopoly.onrender.com/game')
+    axios.get('https://api-huachinopoly.onrender.com/game')
       .then((response) => {
         setGames(response.data);
       })
@@ -24,7 +24,7 @@ function Unirse() {
       localStorage.setItem('gameId', gameId.toString());
       const userId = localStorage.getItem('userId');
       axios
-        .post(`http://api-huachinopoly.onrender.com/game/${gameId}/join/${userId}`, { name: playerName })
+        .post(`https://api-huachinopoly.onrender.com/game/${gameId}/join/${userId}`, { name: playerName })
         .then((response) => {
           console.log(response.data.message);
 
