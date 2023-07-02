@@ -1,1 +1,0 @@
-# grupo-huachipato-frontend
