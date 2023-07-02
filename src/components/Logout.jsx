@@ -14,8 +14,8 @@ const LogoutButton = () => {
     setMsg("Has hecho logout con éxito!");
 
     setTimeout(() => {
-      navigate('/App');
-    }, 2000); // Redirigir después de 2 segundos
+      navigate('/');
+    }, 2000); 
   }
 
   useEffect(() => {
