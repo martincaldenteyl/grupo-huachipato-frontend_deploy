@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Unirse.css';
+import Navbar from './Navbar';
 
 function Unirse() {
   const [games, setGames] = useState([]);
@@ -42,6 +43,7 @@ function Unirse() {
 
   return (
     <div>
+      <Navbar />
       <h2>Unirse a una partida</h2>
       {games.length === 0 ? (
         <p>No hay juegos disponibles</p>
@@ -67,4 +69,5 @@ function Unirse() {
 }
 
 export default Unirse;
+
 
