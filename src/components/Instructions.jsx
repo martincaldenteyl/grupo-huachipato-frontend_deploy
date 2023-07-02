@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
 import Text from "./Text";
-import './instructions.css'
+import './Instructions.css'
 
 export default function instructions() {
     return (
