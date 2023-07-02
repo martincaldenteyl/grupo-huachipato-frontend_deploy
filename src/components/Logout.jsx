@@ -20,9 +20,13 @@ const LogoutButton = () => {
 
   useEffect(() => {
     return () => {
-      clearTimeout(); 
+      clearTimeout();
     };
   }, []);
+
+  const handleVolver = () => {
+    navigate('/Principal');
+  }
 
   return (
     <>
@@ -31,8 +35,12 @@ const LogoutButton = () => {
       <button onClick={handleLogout}>
         Cerrar sesión
       </button>
+      <button onClick={handleVolver}>
+        Volver
+      </button>
     </>
   );
 }
 
 export default LogoutButton;
+
