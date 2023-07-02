@@ -41,9 +41,16 @@ function Unirse() {
     }
   };
 
+  const handleVolver = () => {
+    navigate('/Principal');
+  };
+
   return (
     <div>
       <Navbar />
+      <div className="volver-container">
+          <button onClick={handleVolver}>Volver</button>
+        </div>
       <h2>Unirse a una partida</h2>
       {games.length === 0 ? (
         <p>No hay juegos disponibles</p>

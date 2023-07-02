@@ -59,5 +59,21 @@ body {
   background-color: #e63f3f;
 }
 
+.volver-container {
+  margin-top: 2rem;
+}
+
+.volver-container button {
+  background-color: #ff4a4a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.volver-container button:hover {
+  background-color: #e63f3f;
+}
   
   
